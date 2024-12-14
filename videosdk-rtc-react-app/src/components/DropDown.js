@@ -1,6 +1,6 @@
 import { Popover, Transition } from '@headlessui/react'
 import { CheckIcon } from "@heroicons/react/outline";
-import { ChevronDownIcon } from '@heroicons/react/24/outline';
+// import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import { Fragment } from 'react'
 import React, { useEffect, useRef, useState } from "react";
 import DropMIC from '../icons/DropDown/DropMIC';
@@ -180,11 +180,11 @@ export default function DropDown({
               <span className="overflow-hidden whitespace-nowrap overflow-ellipsis w-28 ml-6">
                 {isMicrophonePermissionAllowed ? selectedMic?.label : "Permission Needed"}
               </span>
-              <ChevronDownIcon
+              {/* <ChevronDownIcon
                 className={`${open ? 'text-white' : 'text-customGray-250 hover:text-white'}
                 ml-8 h-5 w-5 transition duration-150 ease-in-out group-hover:text-orange-300/80 mt-1`}
                 aria-hidden="true"
-              />
+              /> */}
             </Popover.Button>
 
             <Transition
